@@ -27,4 +27,13 @@ for y, row in enumerate(maze):
 assert begin_xy
 assert end_xy
 
+# Solve the maze
+xy = begin_xy
+has_moves = True
+while xy != end_xy and has_moves:
+    break
 
+if xy == end_xy:
+    print("Got a solution! 😌")
+else:
+    print("Couldn't find any solution 😢")
